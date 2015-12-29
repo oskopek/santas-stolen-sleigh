@@ -93,11 +93,9 @@
           <artifactId>exec-maven-plugin</artifactId>
           <!-- WARNING: This configuration must be run with "mvn exec:java" not "mvn exec:exec". -->
           <configuration>
-            <mainClass>org.optaplannerdelirium.sss.app.ReindeerRoutingHelloWorld</mainClass>
+            <mainClass>org.optaplannerdelirium.sss.app.ReindeerRoutingBenchmarkApp</mainClass>
             <arguments>
-              <argument>-Xms1024m</argument>
-              <argument>-Xmx4096m</argument>
-              <argument>-server</argument>
+              <argument>oskopekSmall</argument>
             </arguments>
           </configuration>
         </plugin>

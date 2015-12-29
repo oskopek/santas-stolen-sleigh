@@ -21,6 +21,7 @@ import org.optaplanner.examples.common.app.CommonBenchmarkApp;
 public class ReindeerRoutingBenchmarkApp extends CommonBenchmarkApp {
 
     public static void main(String[] args) {
+        System.setProperty("logback.level.org.optaplanner", "info"); // don't waste time logging too much
         new ReindeerRoutingBenchmarkApp().buildAndBenchmark(args);
     }
 
@@ -42,6 +43,8 @@ public class ReindeerRoutingBenchmarkApp extends CommonBenchmarkApp {
                         "org/optaplannerdelirium/sss/benchmark/oskopek/oskopekDesktopBenchmarkConfig.xml"),
                 new ArgOption("oskopekLaptop",
                         "org/optaplannerdelirium/sss/benchmark/oskopek/oskopekLaptopBenchmarkConfig.xml"),
+                new ArgOption("oskopekSmall",
+                        "org/optaplannerdelirium/sss/benchmark/oskopek/oskopekSmallBenchmarkConfig.xml"),
                 new ArgOption("template",
                         "org/optaplannerdelirium/sss/benchmark/reindeerRoutingBenchmarkConfigTemplate.xml.ftl", true)
         );
